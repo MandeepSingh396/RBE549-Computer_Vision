@@ -1,8 +1,8 @@
 # My AutoPano
-
-Course Homework for RBE549 - Computer Vision (Fall 2022)
-
-Master of Science in Robotics Engineering at [Worcester Polytechnic Institute](https://www.wpi.edu/)
+The purpose of this project is to stitch two or more images in order to create one seamless panorama image by finding the Homography between the two images. 
+The project is divided into two phases,
+1. Phase 1: Classical approach of local feature matching
+2. Phase 2: Deep Learning approach(Homography Net - supervised and unsupervised) to estimate the homography.
 
 ### Team Members
 
@@ -22,6 +22,17 @@ Master of Science in Robotics Engineering at [Worcester Polytechnic Institute](h
     Above command will load Set1 images which needs to be stitched.
 
 2. `Results` folder contains stitched images of all Trainsets and TestSets.
+
+## Phase 1 Results:
+
+#### Original images
+
+<img src="Phase1/Code/Data/Set1/1.jpg"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase1/Code/Data/Set1/2.jpg"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase1/Code/Data/Set1/3.jpg"  align="center" alt="Undistorted" width="300"/>
+
+#### Stitched image
+<img src="Phase1/Code/results/Set1/Set1.png"  align="center" alt="Undistorted" width="500"/>
 
 ### **Phase 2**
 
