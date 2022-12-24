@@ -16,16 +16,16 @@ feature matching, RANSAC, homography estimation and blending.
 ### Results
 
 #### Corner Detection and Non Maximal Suppression
-<img src="Phase1/Code/results/Set1/good_featue_to_track.png"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase1/Code/results/Set1/good_featue_to_track.png"  align="center" alt="Undistorted" width="500"/>
 
 #### Feature Matching
-<img src="Phase1/Code/results/Set1/Feature_matching.png"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase1/Code/results/Set1/Feature_matching.png"  align="center" alt="Undistorted" width="500"/>
 
 #### Outlier Rejection using RANSAC
-<img src="Phase1/Code/results/Set1/RAnsac.png"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase1/Code/results/Set1/RAnsac.png"  align="center" alt="Undistorted" width="500"/>
 
 #### Warping, Blending and Stitching
-<img src="Phase1/Code/results/Set1/Set1.png"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase1/Code/results/Set1/Set1.png"  align="center" alt="Undistorted" width="500"/>
 
 ### Usage Guidelines
 
@@ -44,7 +44,6 @@ In Deep learning, used Homography Net (both supervised and unsupervised) to esti
 
 ### DataSet Generation
 To generate dataset, run the following command in Phase2/Code/supervised: -
-
     ```
     python3 Wrapper.py
     ```
@@ -53,7 +52,7 @@ To generate dataset, run the following command in Phase2/Code/supervised: -
 
 <img src="Phase2/Code/supervised/Results/Supervised.png"  align="center" alt="Undistorted" width="400"/>
 
-#### Result - Loss vs Epochs
+#### Result
 
 ##### Training Loss
 <img src="Phase2/Code/supervised/loss.png"  align="center" alt="Undistorted" width="300"/>
@@ -75,7 +74,7 @@ To generate dataset, run the following command in Phase2/Code/supervised: -
 
 ### Unsupervised Homography
 
-<img src="Phase2/Code/unsupervised/Unsupervised.png"  align="center" alt="Undistorted" width="500"/>
+<img src="Phase2/Code/unsupervised/Unsupervised.png"  align="center" alt="Undistorted" width="550"/>
 
 1. To train the network, run: -
     ```
