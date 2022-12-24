@@ -24,7 +24,7 @@ The aim of this project is to implement an end-to-end pipeline to swap faces in 
 
 ## Using Thin Plate Spline
 
-### Warping and BlendingV
+### Warping and Blending
 <img src="Results/res_tps_2.png"  align="center" alt="Undistorted" width="500"/>
 
 
