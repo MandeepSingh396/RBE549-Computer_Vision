@@ -1,0 +1,3 @@
+[submodule "3D_semantics/3D_semantics/Code/DeepLabV3Plus-Pytorch"]
+	path = 3D_semantics/3D_semantics/Code/DeepLabV3Plus-Pytorch
+	url = https://github.com/VainF/DeepLabV3Plus-Pytorch.git
