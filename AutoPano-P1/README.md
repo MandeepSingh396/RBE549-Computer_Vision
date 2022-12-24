@@ -9,9 +9,25 @@ The project is divided into two phases,
 - Mandeep Singh
 - Chinmay Kate
 
-## Usage Guidelines
+## **Phase 1 - Using Classical CV **
+Implemented traditional CV pipeline combines algorithms of corner detection, ANMS, feature extraction,
+feature matching, RANSAC, homography estimation and blending.
 
-### **Phase1**
+### Results
+
+#### Corner Detection and Non Maximal Suppression
+<img src="Phase1/Code/results/Set1/good_featue_to_track.png"  align="center" alt="Undistorted" width="300"/>
+
+#### Feature Matching
+<img src="Phase1/Code/results/Set1/Feature_matching.png"  align="center" alt="Undistorted" width="300"/>
+
+#### Outlier Rejection using RANSAC
+<img src="Phase1/Code/results/Set1/RAnsac.png"  align="center" alt="Undistorted" width="300"/>
+
+#### Warping, Blending and Stitching
+<img src="Phase1/Code/results/Set1/Set1.png"  align="center" alt="Undistorted" width="300"/>
+
+### Usage Guidelines
 
 1. Open directory Phase1/Code and run the following command with the Data location as command line argument: -
 
@@ -23,49 +39,50 @@ The project is divided into two phases,
 
 2. `Results` folder contains stitched images of all Trainsets and TestSets.
 
-## Phase 1 Results:
+## **Phase 2 - using Deep Learning**
+In Deep learning, used Homography Net (both supervised and unsupervised) to estimate the homography.
 
-#### Original images
+### DataSet Generation
+To generate dataset, run the following command in Phase2/Code/supervised: -
 
-<img src="Phase1/Code/Data/Set1/1.jpg"  align="center" alt="Undistorted" width="300"/>
-<img src="Phase1/Code/Data/Set1/2.jpg"  align="center" alt="Undistorted" width="300"/>
-<img src="Phase1/Code/Data/Set1/3.jpg"  align="center" alt="Undistorted" width="300"/>
-
-#### Stitched image
-<img src="Phase1/Code/results/Set1/Set1.png"  align="center" alt="Undistorted" width="500"/>
-
-### **Phase 2**
-
-### Supervised Homography
-
-1. To generate dataset, run: -
     ```
     python3 Wrapper.py
     ```
 
-2. To train the network, run: -
+### Supervised Homography
+
+<img src="Phase2/Code/supervised/Results/Supervised.png"  align="center" alt="Undistorted" width="400"/>
+
+#### Result - Loss vs Epochs
+
+##### Training Loss
+<img src="Phase2/Code/supervised/loss.png"  align="center" alt="Undistorted" width="300"/>
+
+##### Input and Output Patch
+<img src="Phase2/Code/supervised/Results/Sample.jpeg"  align="center" alt="Undistorted" width="250"/>
+
+
+
+1. To train the network, run: -
     ```
     python3 Train.py
     ```
 
-3. To test the model on test set, run: -
+2. To test the model on test set, run: -
     ```
     python3 Test.py
     ```
 
 ### Unsupervised Homography
 
-1. To generate dataset, run: -
-    ```
-    python3 Wrapper.py
-    ```
+<img src="Phase2/Code/unsupervised/Unsupervised.png"  align="center" alt="Undistorted" width="500"/>
 
-2. To train the network, run: -
+1. To train the network, run: -
     ```
     python3 Train.py
     ```
 
-3. To test the model on trainset , run: -
+2. To test the model on trainset , run: -
     ```
     python3 Test.py
     ```
