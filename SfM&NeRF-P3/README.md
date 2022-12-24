@@ -10,6 +10,17 @@ volumetric scene function using a sparse set of input views (Deep Learning)
 
 ## Phase 1 - Structure from Motion:
 
+There are a few steps that collectively form SfM:
+
+* Feature Matching and Outlier rejection using RANSAC
+* Estimating Fundamental Matrix
+* Estimating Essential Matrix from Fundamental Matrix
+* Estimate Camera Pose from Essential Matrix
+* Check for Cheirality Condition using Triangulation
+* Perspective-n-Point
+* Bundle Adjustment
+
+
 ### Input:
 The data given to us is a set of 5 images of Unity Hall at WPI, using a Samsung S22 Ultra’s primary camera at f/1.8 aperture, ISO 50 and 1/500 sec shutter speed.
 
@@ -57,7 +68,7 @@ Download the lego data for NeRF from the original author’s link [here](https:/
 
 #### Sample input
 
-<img src="Phase2/Results/input.png"  align="center" alt="Undistorted" width="300"/>
+<img src="Phase2/Results/input.png"  align="center" alt="Undistorted" width="500"/>
 
 ### Neural Network used
 <img src="Phase2/Results/Network.png"  align="center" alt="Undistorted" width="300"/>
